@@ -13,21 +13,38 @@ responses:
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_response_product_description:
+  - text: "You know, one of my superpowers is to create unique product descriptions just for YOU! Let's try, it's worth a shot!"
+    buttons:
+    - title: "Ok, Let's Go!"
+      payload: "Ok, Let's Go!"
+    - title: "No, Not Today"
+      payload: "No, Not Today"
+
+  utter_ask_keywords:
+  - text: "Great!! Just give me more than 3 keywords that describe your product separated with commas like: jeans, blue, trendy, cotton"
+
+  utter_ask_for_product_existance:
+  - text: "So, Is there any existing product that you want to write product description for?"
+    buttons:
+    - title: "Yes"
+      payload: "Yes"
+    - title: "No"
+      payload: "No"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_iamabot
+  - utter_response_product_description
+  - utter_ask_keywords
+  - utter_ask_for_product_existance
 
 session_config:
   session_expiration_time: 60
