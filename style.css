@@ -1,0 +1,7 @@
+:root {
+--black: hsl(230, 15%, 15%); --blackSecondary: hsl(230, 15%, 30%);
+}
+
+/* Top region */
+.css-ixhvoz {
+background-color: var(--black); }
