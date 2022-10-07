@@ -38,6 +38,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - Ok, Let's Go!
 
 - intent: deny
   examples: |
@@ -48,6 +49,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - No, Not Today
 
 - intent: mood_great
   examples: |
