@@ -54,6 +54,7 @@ nlu:
 - intent: mood_great
   examples: |
     - perfect
+    - good
     - great
     - amazing
     - feeling like a king
