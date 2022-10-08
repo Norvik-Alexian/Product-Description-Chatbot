@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - product_keywords
 
 responses:
   utter_greet:
@@ -38,6 +39,12 @@ responses:
     - title: "No"
       payload: "No"
 
+  utter_inform_generation:
+  - text: "Perfect! Now I will generate a unique product description just for you!"
+
+  utter_finish_process:
+    - text: "Here you go! I hope you liked it."
+
 actions:
   - utter_greet
   - utter_goodbye
@@ -45,6 +52,9 @@ actions:
   - utter_response_product_description
   - utter_ask_keywords
   - utter_ask_for_product_existance
+  - utter_inform_generation
+  - action_product_description
+  - utter_finish_process
 
 session_config:
   session_expiration_time: 60
