@@ -91,3 +91,9 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: product_keywords
+  examples: |
+    - jeans, trendy, comfy
+    - shirt, red, short sleeve
+    - Ucraft, website builder, ecommerce
