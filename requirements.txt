@@ -1,2 +1,4 @@
 rasa==3.2.10
+spacy==3.4.1
 python-dotenv==0.21.0
+# python -m spacy download en_core_web_md
