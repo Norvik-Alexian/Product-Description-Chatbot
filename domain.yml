@@ -32,6 +32,14 @@ responses:
     - text: "Ok no problem, whenever you want to write description or you need help with your product description, I'm 
     always here to help, Take Care!"
 
+  utter_change_mood_happy:
+  - text: "I'm sorry to hear that, but I guarantee you when I write descriptions for your product you're going to feel great! It's worth a shot!"
+    buttons:
+    - title: "Take the Shot!"
+      payload: "Take the Shot!"
+    - title: "No, Not Today"
+      payload: "No, Not Today"
+
   utter_ask_keywords:
   - text: "Great!! Just give me more than 3 keywords that describe your product separated with commas like: jeans, blue, trendy, cotton"
 
@@ -60,6 +68,7 @@ actions:
   - action_product_description
   - utter_finish_process
   - utter_deny_generation_proceed
+  - utter_change_mood_happy
 
 session_config:
   session_expiration_time: 60
