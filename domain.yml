@@ -28,6 +28,10 @@ responses:
     - title: "No, Not Today"
       payload: "No, Not Today"
 
+  utter_deny_generation_proceed:
+    - text: "Ok no problem, whenever you want to write description or you need help with your product description, I'm 
+    always here to help, Take Care!"
+
   utter_ask_keywords:
   - text: "Great!! Just give me more than 3 keywords that describe your product separated with commas like: jeans, blue, trendy, cotton"
 
@@ -55,6 +59,7 @@ actions:
   - utter_inform_generation
   - action_product_description
   - utter_finish_process
+  - utter_deny_generation_proceed
 
 session_config:
   session_expiration_time: 60
