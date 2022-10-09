@@ -25,3 +25,18 @@ stories:
   - action: utter_response_product_description
   - intent: deny
   - action: utter_deny_generation_proceed
+
+- story: mood unhappy for generating product description
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_change_mood_happy
+  - intent: affirm
+  - action: utter_ask_for_product_existance
+  - intent: affirm
+  - action: utter_ask_keywords
+  - intent: product_keywords
+  - action: utter_inform_generation
+  - action: action_product_description
+  - action: utter_finish_process
