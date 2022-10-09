@@ -16,3 +16,12 @@ stories:
   - action: utter_inform_generation
   - action: action_product_description
   - action: utter_finish_process
+
+- story: happy path deny generation proceed
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_response_product_description
+  - intent: deny
+  - action: utter_deny_generation_proceed
