@@ -39,6 +39,7 @@ nlu:
     - that sounds good
     - correct
     - Ok, Let's Go!
+    - Take the Shot!
 
 - intent: deny
   examples: |
